@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    app:
+        image: server
+        build: ./part5
+    nginx:
+        image: nginx
+        build: ./06
+        ports:
+            - 80:8080
